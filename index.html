@@ -26,7 +26,7 @@
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEPPGzNAb0qoUQtKdi8xwn3qEIsJLtMIA"></script>
   <script>
-    var serviceWorkerVersion = '3658142120';
+    var serviceWorkerVersion = '564626049';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -34,7 +34,7 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
+      scriptTag.src = 'main.dart.js?version=1';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
